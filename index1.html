@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La Jaula Estampados | La onda hecha reme</title>
+    <script src="preentrega2.js" ></script>
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="otro.css">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">lajaulaestampados</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <a href="#" class="list-group-item" id="precio-total">Carrito
+            <b id="contador">0</b>
+          </a>
+      </nav>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1><a id="a" href="#"> La </a><b>Jaula</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <!-- Categorias -->
+                    <ul>
+                        <li><a href="#"><i class="fas fa-bars"></i>Inicio </a></li>
+                        <li><a href="#"><i class="fas fa-bars"></i>Novedades</a></li>
+                        <li><a href="#"><i class="fas fa-bars"></i>Productos</a></li>
+                        <li><a href="#"><i class="fas fa-bars"></i>Carrito</a></li>
+                        <li class="menu-selected"><a href="#" class="text-menu-selected">
+                                    <ul id="carrito" class="list-group"></ul>
+                                
+                                    <!-- Precio total -->
+                                    <li class="text-menu-selected">Total: <span id="total"></span>$</li>
+                                    <button id="borrarUnProducto" class="btn btn-danger" onclick="borrarUnProducto()">Vaciar</button>
+                                </aside>
+
+
+                            </div>
+                        </div>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="container-all" id="move-content">
+        <div class="blog-container-cover">
+            <div class="blog-container-info-cover">
+                <h1>¡La Jaula Estampados!</h1>
+                <p>Talles reales! 
+                </p><p>Reales, posta!</p>
+            </div>
+        </div>
+        <div class="container-posts">
+<input type="radio" id="TODOS"  name="categories"   value="TODO" checked>
+<input type="radio" id="A"  name="categories"   value="A">
+<input type="radio" id="B"  name="categories"   value="B">
+<input type="radio" id="C"  name="categories"   value="C">
+<input type="radio" id="D"  name="categories"   value="D">
+<input type="radio" id="E"  name="categories"   value="E">
+<input type="radio" id="F"  name="categories"   value="F">
+            <div class="container-category">
+                <label for=[A,B,C,D,E,F] >TODO!</label>
+                <label for="A">Reme Alf!</label>
+                <label for="B">Reme Bazooka!</label>
+                <label for="C">Reme Britney!</label>
+                <label for="D">Reme Capitan!</label>
+                <label for="E">Reme Jorgito!</label>
+                <label for="F">Buzos!</label>
+            </div>
+            <!-- Posteo -->
+           
+           
+            <div class="posts" id="postz">
+                <div class="post"   data-category="A">
+                    <div class="ctn-img">
+                        <img class="zoom"src="RemeAlf.png" alt="" >               
+                    </div>
+                    <h2>Reme Alf</h2>
+                    <span>Varios Colores</span>
+                    <ul class="ctn-tag">
+                        <li>$560</li>
+                    </ul>
+                    <a href="#"> <button class="btn btn primary" onClick = "agregarAlCarrito(560);">Comprar!</button></a>
+                </div>
+                
+                
+                
+                
+                <div class="post"    data-category="B">
+                    <div class="ctn-img">
+                        <img class="zoom" src="RemeBazooka.png" alt="">
+                    </div>
+                    <h2>Reme Bazooka</h2>
+                    <span>Varios Colores</span>
+                    <ul class="ctn-tag">
+                        <li>$700</li>
+                    </ul>
+                    <a href="#"> <button class="btn btn primary" onClick = "agregarAlCarrito(700);">Comprar!</button></a>
+
+                    
+                </div>
+
+
+
+
+                <div class="post"    data-category="C">
+                    <div class="ctn-img">
+                        <img class="zoom" src="RemeBritney.png" alt="">
+                    </div>
+                    <h2>Reme Britney</h2>
+                    <span>Amarilla</span>
+                    <ul class="ctn-tag">
+                        <li>$450</li>
+                    </ul>
+                    <a href="#"> <button class="btn btn primary" onClick = "agregarAlCarrito(450)">Comprar!</button></a>
+                </div>
+              
+              
+                    <div class="post"    data-category="D">
+                    <div class="ctn-img">
+                        <img class ="zoom" src="RemeCapitan.png" alt="">
+                    </div>
+                    <h2>Reme Capitan</h2>
+                    <span>Varios colores</span>
+                    <ul class="ctn-tag">
+                        <li>$500</li>
+                    </ul>
+                    <a href="#"> <button class="btn btn primary" onClick = "agregarAlCarrito(500)">Comprar!</button></a>
+                </div>
+
+
+
+
+                <div class="post"    data-category="E">
+                    <div class="ctn-img">
+                        <img class="zoom" src="RemeJorgito.png" alt="">
+                    </div>
+                    <h2>Reme Jorgito
+                    </h2>
+                    <span>Varios Colores</span>
+                    <ul class="ctn-tag">
+                        <li>$480</li>
+                    </ul>
+                    <a href="#"> <button class="btn btn primary" onClick = "agregarAlCarrito(480)">Comprar!</button></a>
+                </div>
+
+
+
+
+                <div class="post"    data-category="F">
+                    <div class="ctn-img">
+                        <img class="zoom" src="RemeBuzos.png" alt="">
+                    </div>
+                    <h2>Buzos!</h2>
+                    <span>Varios Colores y estampas</span>
+                    <ul class="ctn-tag">
+                        <li>$1100</li>
+                    </ul>
+                    <a href="#"> <button class="btn btn primary" onClick = "agregarAlCarrito(1100)">Comprar!</button></a>
+                </div>
+            </div>
+        </div>
+
+        
+
+  
+      
+        <div class="container-footer">
+            <footer>
+                <div class="logo-footer">
+                    <img src="icon.png" alt="">
+                </div>
+                <div class="redes-footer">
+                    <a href="https://api.whatsapp.com/send?phone=(Su numero)&text=Buen dia, tengo una consulta:"><i class="fab fa-whatsapp   icon-redes-footer"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram  icon-redes-footer"></i></a>
+                    <a href="#"><i class="fas fa-envelope-square    icon-redes-footer"></i></a>
+                </div>
+
+                <hr>
+                <h4>@ 2021 Juliclapier </h4>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+
+</html>
